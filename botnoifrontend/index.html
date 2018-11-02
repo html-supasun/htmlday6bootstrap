@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Setting Botnoi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Mali" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body style="background: #62ceff">
+    <div class="container">
+        <img src="images/logo-setting.png" class="image__botnoi" alt="image__botnoi">
+        <div class="container__form font__string shadow__form color__input__box shadow__input__box font__placeholder">
+
+            <div class="text__center">
+                <h2>ตั้งค่าบอทน้อย</h2>
+            </div>
+            <div class="text__center">
+                <p>บอทน้อยในเเบบของคุณ</p>
+            </div>
+            <div class="form-group" onfocus="focusFunction()" onblur="blurFunction()">
+                <label id="myTextHover__name__botnoi">บอทน้อย "แทนตัวเอง" ว่าอะไรดีครับ</label>
+                <input class="form-control" id="myInputColor__name__botnoi" placeholder="ที่รัก ฮันนี่ เจ้านาย etc."
+                    onfocus="focusFunction(this, 'myTextHover__name__botnoi')" onblur="blurFunction(this,'myTextHover__name__botnoi')">
+            </div>
+            <div class="form-group">
+                <label id="myTextHover__last__word__botnoi">อยากให้บอทน้อย"พูดลงท้าย"ว่าอะไร</label>
+                <input class="form-control" id="myInputColor__last__word__botnoi" placeholder="ครับ ค่ะ ฮ่ะ" onfocus="focusFunction(this, 'myTextHover__last__word__botnoi')"
+                    onblur="blurFunction(this, 'myTextHover__last__word__botnoi')">
+            </div>
+            <div class="form-group">
+                <label id="myTextHover__mynickname">ชื่อเล่นของคุณ</label>
+                <input class="form-control" id="myInputColor__mynickname" placeholder="กิ้บ กบ (ไม่ใช่ชื่อบอทน้อยนะ)"
+                    onfocus="focusFunction(this,'myTextHover__mynickname')" onblur="blurFunction(this,'myTextHover__mynickname')">
+            </div>
+            <div class="form-group">
+                <label id="myTextHover__mybirthday">"วันเกิด"ของคุณ</label>
+
+                <input class="form-control" placeholder="บอทน้อยจะไปแฮปปี้เบิร์ดเดย์" type="text" onMouseOver="(this.type='date')"
+                    onMouseOut="(this.type='text')" id="date myInputColor" class="form-control__mybirthday" onfocus="focusFunction(this, 'myTextHover__mybirthday')"
+                    onblur="blurFunction(this, 'myTextHover__mybirthday')">
+            </div>
+            <div class="form-group">
+                <label id="myTextHover__mysex">เพศของคุณ</label>
+                <div class="btn-group btn__group__sex" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn__sex" onfocus="focusFunction(this, 'myTextHover__mysex')"
+                        onblur="blurFunction(this, 'myTextHover__mysex')">ชาย</button>
+                    <button type="button" class="btn btn__sex" onfocus="focusFunction(this, 'myTextHover__mysex')"
+                        onblur="blurFunction(this, 'myTextHover__mysex')">หญิง</button>
+                </div>
+            </div>
+            <div class="form-group">
+                <label id="myTextHover__hobbies__and__interest">งานอดิเรกเเละความสนใจ</label>
+                <input class="form-control" id="myInputColor__hobbies__and__interest" placeholder="เล่นฟุตบอล ดูหนัง ฟังเพลง"
+                    onfocus="focusFunction(this,'myTextHover__hobbies__and__interest')" onblur="blurFunction(this,'myTextHover__hobbies__and__interest')">
+            </div>
+            <button type="button" class="btn btn__footer">เรียบร้อย</button>
+        </div>
+    </div>
+
+
+    <script>
+        function focusFunction(inputTag, labelId) {
+            var labelTag = document.getElementById(labelId)
+            labelTag.style.color = "#426ae0"
+            inputTag.style.border = "2px solid #426ae0"
+        }
+        function blurFunction(inputTag, labelId) {
+            var labelTag = document.getElementById(labelId)
+            labelTag.style.color = "#40bef8"
+            inputTag.style.border = "1px solid #40bef8"
+        }
+    </script>
+</body>
+
+</html>
